@@ -5,11 +5,21 @@ import Mysql from "./icons/Mysql.astro"
 import Inertia from "./icons/Inertia.astro"
 import Laravel from "./icons/Laravel.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import CODEIGNITER from "./icons/Codeigniter.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import Bootstrap from "./icons/Bootstrap.astro"
+import Astrosvg from "./icons/Astrosvg.astro"
+import AstroFrame from "./icons/AstroFrame.astro"
+import Flask from "./icons/Flask.astro"
 
 const TAGS = {
-  NEXT: {
+  FLASK: {
+    name: "Flask",
+    class: "bg-[#003159] text-white",
+    icon: Flask,
+  },
+  LARAVEL: {
     name: "Laravel",
     class: "bg-[#003159] text-white",
     icon: Laravel,
@@ -34,26 +44,81 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Inertia,
   },
+  CODEIGNITER: {
+    name: "Codeigniter",
+    class: "bg-[#003159] text-white",
+    icon: CODEIGNITER,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap 5",
+    class: "bg-[#003159] text-white",
+    icon: Bootstrap,
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-[#003159] text-white",
+    icon: AstroFrame,
+  },
+  
 
 }
 const PROJECTS = [
+{
+    title: "Web Futuras Estrellas",
+    description:
+      "Desarrollé una página web para Futuras Estrellas con las secciones de Inicio (Noticias), Productos, Sedes y Pagos. Incluye un panel de administración con funcionalidades CRUD para gestionar noticias, productos y sedes.",
+    link: "",
+    github: "https://github.com/vadelgado/Futuras",
+    image: "/projects/FuturasEstrellas.webp",
+        tags: [TAGS.LARAVEL, TAGS.REACT, TAGS.TAILWIND, TAGS.INERTIA, TAGS.MYSQL],
+
+  },
   {
     title: "ASUDEG",
     description:
       "Una Solución Tecnológica Para La Gestión De Torneos Deportivos En Alianza Sureña Grupo Empresarial.",
     link: "",
     github: "https://github.com/vadelgado/ASUDE",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.REACT, TAGS.TAILWIND, TAGS.INERTIA, TAGS.MYSQL],
+    image: "/projects/ASUDEG.webp",
+    tags: [TAGS.LARAVEL, TAGS.REACT, TAGS.TAILWIND, TAGS.INERTIA, TAGS.MYSQL],
   },
   {
-    title: "Web Futuras Estrellas",
+    title: "Landing page Baby Futbol Masculino Funes",
     description:
-      "Desarrollé una página web para Futuras Estrellas con las secciones de Inicio (Noticias), Productos, Sedes y Pagos. Incluye un panel de administración con funcionalidades CRUD para gestionar noticias, productos y sedes.",
+      "Página de aterrizaje para el torneo de fútbol Funes, llevado a cabo en abril de 2024. Esta página web fue desarrollada con la finalidad de servir de prototipo para el aplicativo ASUDEG. Con la finalidad de recivir Retroalimentación de los usuarios.",
+    link: "https://baby-futbol-masculino-funes.vercel.app/",
+    github: "https://github.com/vadelgado/zonal-baby-futbol-masculino",
+    image: "/projects/FunesLandinPage.webp",
+    tags: [TAGS.ASTRO, TAGS.TAILWIND,],
+  },
+  {
+    title: "Bonita Peluquería",
+    description:
+      "Durante el décimo semestre, desarrollé junto con una compañera un sistema para la peluquería Mujer Bonita de Ipiales, aplicando la metodología SCRUM. Este sistema no solo da a conocer los servicios que ofrece la peluquería, sino que también gestiona los ingresos y egresos de manera eficiente.",
     link: "",
-    github: "https://github.com/vadelgado/Futuras",
-    image: "/projects/adventjs.webp",
-        tags: [TAGS.NEXT, TAGS.REACT, TAGS.TAILWIND, TAGS.INERTIA, TAGS.MYSQL],
+    github: "https://github.com/vadelgado/bonitaPeluqueria",
+    image: "/projects/BonitaPeluqueria.webp",
+        tags: [TAGS.LARAVEL, TAGS.BOOTSTRAP, TAGS.MYSQL],
+
+  },
+  {
+    title: "softAbraham2023",
+    description:
+      "Desarrollé en 9 semestre un sistema de gestión escolar para generar boletines en PDF de los cuatro periodos académicos. Desarrollado con SCRUM en colaboración con el Colegio Siglo XXI de Ipiales y otra compeñera de la Universidad este incluye módulos para gestionar usuarios, cursos, matrícula, boletines, docentes, estudiantes y calificaciones.",
+    link: "",
+    github: "https://github.com/vadelgado/softAbraham2023",
+    image: "/projects/softAbraham2023.webp",
+        tags: [TAGS.CODEIGNITER, TAGS.BOOTSTRAP, TAGS.MYSQL],
+
+  },
+  {
+    title: "Seteagrop",
+    description:
+      "Desarrollé en 8 semestre un sistema para la empresa SETEAGROP, que se dedica a la comercialización de productos agrícolas. Este sistema permite gestionar los productos, clientes, simula la ventas de productos. lo desarrolle con SCRUM. trabajando con otra compeñera la cual tenia el rol de Scrum Master.",
+    link: "",
+    github: "https://github.com/vadelgado/Seteagrop",
+    image: "/projects/Seteagro.webp",
+        tags: [TAGS.FLASK, TAGS.BOOTSTRAP, TAGS.MYSQL],
 
   },
 ]
