@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente ...",
+    title: "Desarrollador Software",
+    company: "Alianza Sureña",
+    description:
+      "Ingresé en esta empresa en junio del 2023, donde tuve la oportunidad de conocer su portafolio de servicios. Mis primeras tareas consistieron en llevar la estadística de sus torneos y divulgar sus servicios. Después de seis meses de trabajo, propuse la implementación de dos sistemas web para optimizar estas actividades. Desarrollé estos sistemas utilizando varios artefactos y eventos de SCRUM. La Universidad de Nariño aprobó estos proyectos como parte de mi trabajo de grado. Actualmente, estoy en el proceso de despliegue de los sistemas. El 19 de julio, entregaré los informes finales a la universidad para poder obtener mi título de Ingeniero de Sistemas.",
+    link: "",
+  },
+  {
+    date: "Enero 2021 a Junio 2021",
+    title: "Toma de requerimientos y despliegue de software",
+    company: "Finantec",
+    description:
+      "Fui responsable de entrevistar a los clientes para recopilar requerimientos mediante entrevistas y encuestas. Además, me encargué del despliegue del software en los servidores de las empresas, asegurando la entrega de las funcionalidades de los sistemas mediante listas de verificación. Desplegué un sistema llamado Finansoft para cooperativas, el cual fue implementado en una red local. Este software estaba desarrollado en ASP.NET y SQL Server. También desplegué dos sistemas de ventas para una droguería y una bicicletería, desarrollados en PHP y MySQL.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
